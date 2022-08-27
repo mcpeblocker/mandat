@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mandat yordamchisi</title>
+  </head>
+  <body>
+    <!-- Decision container -->
+    <div id="input-type" style="display: none">
+      <p>QR kodni qaysi shaklda skaner qilmoqchisiz?</p>
+      <button onclick="chooseInputType('video')">Kamera</button>
+      <button onclick="chooseInputType('file')">Rasm fayli</button>
+    </div>
+
+    <!-- Scanner containers -->
+    <div id="video-container" style="display: none">
+      <video id="video-element"></video>
+    </div>
+    <div id="file-container" style="display: none">
+      <h1>Bu bo'lim hali bitkazilmagan.</h1>
+      <!-- <input type="file" id="image-file" required />
+      <button type="button" onclick="scanImage()">Natijani olish</button> -->
+    </div>
+
+    <!-- Scripts -->
+    <script src="./scanner.js" type="module"></script>
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>
